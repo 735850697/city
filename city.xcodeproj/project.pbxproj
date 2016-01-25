@@ -15,6 +15,8 @@
 		9AD701BD1C2D40F200C156E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD701BB1C2D40F200C156E3 /* LaunchScreen.storyboard */; };
 		9AD701C81C2D40F200C156E3 /* cityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD701C71C2D40F200C156E3 /* cityTests.m */; };
 		9AD701D31C2D40F200C156E3 /* cityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD701D21C2D40F200C156E3 /* cityUITests.m */; };
+		9AD701E41C2D410C00C156E3 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AD701E11C2D410C00C156E3 /* Address.plist */; };
+		9AD701E91C2D49E100C156E3 /* mePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD701E81C2D49E100C156E3 /* mePickView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		9AD701CE1C2D40F200C156E3 /* cityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD701D21C2D40F200C156E3 /* cityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cityUITests.m; sourceTree = "<group>"; };
 		9AD701D41C2D40F200C156E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD701E11C2D410C00C156E3 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Address.plist; path = ../GKHLocationPicker/Address.plist; sourceTree = "<group>"; };
+		9AD701E71C2D49E100C156E3 /* mePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mePickView.h; sourceTree = "<group>"; };
+		9AD701E81C2D49E100C156E3 /* mePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mePickView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		9AD701AC1C2D40F200C156E3 /* city */ = {
 			isa = PBXGroup;
 			children = (
+				9AD701E61C2D49C200C156E3 /* picker */,
 				9AD701B01C2D40F200C156E3 /* AppDelegate.h */,
 				9AD701B11C2D40F200C156E3 /* AppDelegate.m */,
 				9AD701B31C2D40F200C156E3 /* ViewController.h */,
@@ -138,6 +144,16 @@
 				9AD701D41C2D40F200C156E3 /* Info.plist */,
 			);
 			path = cityUITests;
+			sourceTree = "<group>";
+		};
+		9AD701E61C2D49C200C156E3 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				9AD701E11C2D410C00C156E3 /* Address.plist */,
+				9AD701E71C2D49E100C156E3 /* mePickView.h */,
+				9AD701E81C2D49E100C156E3 /* mePickView.m */,
+			);
+			path = picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD701BD1C2D40F200C156E3 /* LaunchScreen.storyboard in Resources */,
+				9AD701E41C2D410C00C156E3 /* Address.plist in Resources */,
 				9AD701BA1C2D40F200C156E3 /* Assets.xcassets in Resources */,
 				9AD701B81C2D40F200C156E3 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +289,7 @@
 			files = (
 				9AD701B51C2D40F200C156E3 /* ViewController.m in Sources */,
 				9AD701B21C2D40F200C156E3 /* AppDelegate.m in Sources */,
+				9AD701E91C2D49E100C156E3 /* mePickView.m in Sources */,
 				9AD701AF1C2D40F200C156E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
